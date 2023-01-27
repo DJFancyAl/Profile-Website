@@ -1,0 +1,502 @@
+/* Fonts */
+@font-face {
+  font-family: "codec_proitalic";
+  src: url("/assets/fonts/codecpro-italic-webfont.woff2") format("woff2"), url("/assets/fonts/codecpro-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "codec_proregular";
+  src: url("/assets/fonts/codecpro-regular-webfont.woff2") format("woff2"), url("/assets/fonts/codecpro-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Colors */
+body {
+  background-color: #eff0ec;
+  font-family: "codec_proregular";
+  margin: 0px;
+  padding: 0px;
+  font-family: "codec_proregular";
+  font-size: 14px;
+}
+
+a {
+  color: inherit;
+}
+
+p {
+  font-size: 1.6em;
+}
+
+header {
+  height: 100vh;
+  padding: 2em 0;
+  box-sizing: border-box;
+  background-image: url("/assets/images/hero.webp");
+  background-position: left top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+header h1 {
+  color: #555c60;
+  font-size: 5.5em;
+  margin-bottom: 0.3em;
+}
+header h2 {
+  font-size: 3.5em;
+  font-weight: normal;
+  margin: 0 0 1em 0;
+}
+header p {
+  font-size: 2em;
+}
+
+nav {
+  padding: 1em 4em;
+  top: 0;
+  position: sticky;
+}
+nav a {
+  color: #000;
+  text-decoration: none;
+  padding: 2em 0.7em;
+  transition: 0.4s;
+}
+nav a:hover {
+  border-top: solid 3px #888f70;
+  padding-top: calc(0.7em - 3px);
+  color: #888f70;
+}
+nav .icon {
+  display: none;
+}
+
+#hero {
+  height: calc(100% - 1.4em - 14px);
+  padding: 4em;
+  display: flex;
+  align-items: center;
+}
+#hero p {
+  width: 40%;
+}
+
+.container {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+section {
+  padding-top: 8em;
+  padding-bottom: 8em;
+  text-align: center;
+}
+
+.card {
+  background-color: #fff;
+  width: 350px;
+  height: 30em;
+  margin: 1em;
+  border-radius: 30px;
+  transition: 0.15s;
+}
+.card .img-container {
+  border-radius: 30px;
+  width: 100%;
+  max-height: 200px;
+  display: inline-block;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  transition: 0.5s;
+}
+.card .card-body {
+  padding: 1.5em;
+  min-height: 175px;
+  position: relative;
+}
+.card h4 {
+  font-size: 2em;
+  padding: 0 2em;
+  margin: 1em 0;
+}
+.card button {
+  width: 80%;
+  background-color: #3f4726;
+  color: #eff0ec;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 20px;
+  padding: 0.7em;
+  transition: 0.15s;
+  position: absolute;
+  bottom: 1.5em;
+  left: 10%;
+}
+.card button:hover {
+  background-color: #888f70;
+  font-weight: bolder;
+  transform: scale(1.1);
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px 3px #3f4726;
+}
+
+#about {
+  background-color: #a4ac9e;
+}
+#about h3 {
+  font-size: 1.6em;
+  font-weight: normal;
+}
+#about p {
+  font-size: 3em;
+}
+#about div {
+  transition: 0.4s;
+}
+
+#projects {
+  background-color: #d4ddb7;
+}
+#projects h2 {
+  margin: 0px;
+  display: inline-block;
+  font-size: 4.5em;
+  font-weight: bolder;
+  transition: 0.4s;
+}
+#projects p {
+  margin: 3em 0;
+}
+
+#project-gallery {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#solving {
+  padding: 0 0 8em 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  background-color: #eff0ec;
+}
+#solving > :first-child {
+  margin-top: 8em;
+  width: 50%;
+}
+#solving > :first-child h2 {
+  font-size: 5em;
+  position: relative;
+  left: -100%;
+  padding-right: 15%;
+  text-align: end;
+  transition: 0.4s;
+}
+#solving > :last-child {
+  text-align: left;
+  width: 50%;
+  overflow: hidden;
+}
+#solving > :last-child img {
+  width: 100%;
+  border-radius: 0 0 0 60px;
+  position: relative;
+  right: -100%;
+  transition: 0.4s;
+}
+#solving > :last-child p {
+  padding: 1.5em 0;
+  line-height: 1.5em;
+  text-align: justify;
+  width: 70%;
+  word-wrap: break-word;
+}
+#solving > :last-child button {
+  background-color: #888f70;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+  padding: 1.2em 3em;
+  transition: 0.4s;
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+#solving > :last-child button:hover {
+  background-color: #3f4726;
+  padding: 1.2em 5em;
+}
+
+#creating {
+  background-color: #888f70;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#creating img {
+  min-height: 100%;
+  min-width: 100%;
+  position: relative;
+  border-radius: 0 6em 6em 0;
+  transform: scale(0);
+  transition: 0.4s;
+}
+#creating > :first-child {
+  width: 50%;
+  border-radius: 0 6em 6em 0;
+  text-align: right;
+  overflow: hidden;
+}
+#creating > :last-child {
+  width: 50%;
+  text-align: left;
+  padding: 0 4em;
+  box-sizing: border-box;
+  align-self: flex-end;
+  overflow: hidden;
+}
+#creating h2 {
+  font-size: 4em;
+  transition: 0.4s;
+}
+#creating p {
+  width: 75%;
+  margin-bottom: 8em;
+}
+#creating button {
+  background-color: #d4ddb7;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+  padding: 1.2em 3em;
+  transition: 0.4s;
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+#creating button:hover {
+  background-color: #3f4726;
+  color: #fff;
+  padding: 1.2em 5em;
+}
+
+#learning {
+  background-color: #d4ddb7;
+}
+#learning h2 {
+  font-size: 4em;
+}
+
+#learning-gallery {
+  padding-left: 10%;
+  padding-right: 10%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#learning-gallery .card {
+  background-color: #888f70;
+  width: 35%;
+  height: 40em;
+  color: #fff;
+  transform: rotatey(90deg);
+  transition: 0.8s;
+}
+#learning-gallery .card .img-container {
+  border-radius: 30px;
+  width: 100%;
+  max-height: 300px;
+  display: inline-block;
+  overflow: hidden;
+}
+#learning-gallery .card .card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: #3f4726;
+  color: #fff;
+  text-align: center;
+  padding: 2em 10%;
+}
+footer h2 {
+  font-size: 4.5em;
+  font-weight: normal;
+}
+
+form {
+  margin: auto;
+}
+form #formbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+form #formbox div {
+  width: 500px;
+  text-align: left;
+  padding: 0.5em;
+  box-sizing: border-box;
+}
+form button {
+  font-size: 1.5em;
+  padding: 0.7em 2.5em;
+  border: none;
+  background-color: #d4ddb7;
+  color: #3f4726;
+  border-radius: 1.45em;
+  transition: 0.4s;
+  font-family: "codec_proregular";
+}
+form button:hover {
+  padding: 0.7em 6em;
+  background-color: #eff0ec;
+}
+
+label {
+  padding: 1.2em;
+  font-size: 1.5em;
+}
+
+input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1.5em;
+  font-family: "codec_proregular";
+  padding: 0.7em 1.2em;
+  margin: 0.3em 0 1.5em 0;
+  background-color: #eff0ec;
+  color: #3f4726;
+  border-radius: 1.45em;
+}
+
+#icons {
+  margin-top: 1.5em;
+  font-size: 3em;
+  text-align: right;
+}
+#icons i {
+  padding: 0.4em;
+  transition: 0.4s;
+}
+#icons i:hover {
+  transform: scale(1.2);
+  color: #d4ddb7;
+}
+
+@media screen and (max-width: 992px) {
+  section {
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+  .container {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .card {
+    width: 60%;
+    margin: 2em 1em;
+  }
+  #icons {
+    text-align: center;
+  }
+  #solving > :first-child {
+    width: 100%;
+    margin-top: 4em;
+  }
+  #solving > :first-child h2 {
+    text-align: center;
+    padding: 0%;
+  }
+  #solving > :last-child {
+    width: 100%;
+    text-align: center;
+  }
+  #solving > :last-child img {
+    border-radius: 60px 0 0 60px;
+    padding-left: 5%;
+  }
+  #solving > :last-child p {
+    width: 90%;
+    margin: auto;
+  }
+  #creating > :first-child {
+    width: 100%;
+    margin-right: 5%;
+  }
+  #creating > :last-child {
+    width: 100%;
+    text-align: center;
+  }
+  #creating p {
+    width: 100%;
+    margin-bottom: 4em;
+  }
+  #learning-gallery {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #learning-gallery .card {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+  nav {
+    padding: 0;
+  }
+  nav a:hover {
+    border: 0px;
+    padding: 2em 0.7em;
+  }
+  header {
+    padding: 0;
+  }
+  .topBar a {
+    display: none;
+  }
+  .topBar .icon {
+    float: right;
+    display: block;
+    font-size: 2.3em;
+    padding: 5%;
+  }
+  .topBar.responsive a {
+    display: block;
+    background-color: #eff0ec;
+  }
+  .topBar.responsive a:hover {
+    background-color: #555c60;
+    color: #fff;
+  }
+  .topBar.responsive .icon {
+    background: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
