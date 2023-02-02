@@ -30,13 +30,14 @@ p {
 }
 
 header {
-  height: 100vh;
-  padding: 2em 0;
   box-sizing: border-box;
-  background-image: url("/assets/images/hero.webp");
-  background-position: left top;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+header #banner {
+  width: 50%;
+  padding: 2em 0;
 }
 header h1 {
   color: #555c60;
@@ -73,13 +74,22 @@ nav .icon {
 }
 
 #hero {
-  height: calc(100% - 1.4em - 14px);
+  height: calc(100vh - 6rem - 14px);
   padding: 4em;
   display: flex;
   align-items: center;
 }
 #hero p {
-  width: 40%;
+  width: 100%;
+}
+
+#profile {
+  width: 50%;
+  min-height: 100%;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0) 80%, rgba(239, 240, 236, 0.7) 90%, rgb(239, 240, 236)), url(./assets/images/al_bluemle.jpg);
+  background-position: center bottom;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -404,7 +414,56 @@ input {
   color: #d4ddb7;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 992px) {
+  header #banner {
+    width: 100%;
+  }
+  #profile {
+    width: 100%;
+    min-height: 600px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0) 80%, rgba(239, 240, 236, 0.7) 90%, rgb(239, 240, 236)), url(./assets/images/jungle.jpg);
+    background-position: center top;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
   section {
     padding-top: 4em;
     padding-bottom: 4em;
@@ -474,18 +533,25 @@ input {
   header {
     padding: 0;
   }
+  header #banner {
+    padding: 0;
+  }
   .topBar a {
     display: none;
   }
   .topBar .icon {
-    float: right;
     display: block;
     font-size: 2.3em;
     padding: 5%;
   }
+  .topBar.responsive {
+    padding-top: 6.5em;
+    border-bottom: 1px solid #3f4726;
+  }
   .topBar.responsive a {
     display: block;
     background-color: #eff0ec;
+    border-top: 1px solid #3f4726;
   }
   .topBar.responsive a:hover {
     background-color: #555c60;
@@ -494,8 +560,9 @@ input {
   .topBar.responsive .icon {
     background: none;
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
+    border: none;
   }
 }
 

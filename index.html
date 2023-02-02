@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div>
+        <div id="banner">
             <nav class="topBar">
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
@@ -33,8 +33,7 @@
             </div>
         </div>
 
-        <img src="" alt="">
-
+        <div id="profile"></div>
     </header>
 
     <main>
@@ -42,40 +41,60 @@
             <div>
                 <h3>Hello! My name is Al and I am excited to help you with your software needs.</h3>
                 <p>I am a proud developer with a growing set of skills and capabilities.</p>
-                <p>Use modern technologies to create full stack applications, websites, automation scripts, and more.</p>
+                <p>Using modern technologies to create full stack applications, websites, automation scripts, and more.</p>
             </div>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
-            <p class="container">Share your services or product offerings here. Present them as simple headers that can lead out to their pages where you can expound on them further. You can also use this space for other purposes where the information is best presented as mere teasers to other individualized pages.</p>
+            <p class="container">Every company has its own unique set of needs or challenges. It’s my aim to solve these challenges and help businesses reach their true potential. By using a wide variety of programming languages, frameworks, and skills I am able to fulfill many needs. Whatever your needs may be – I want to work with you to discover the best way to help. </p>
             <div id="project-gallery">
                 <div class="card">
                     <div class="img-container">
-                        <img src="/assets/images/projects/project_1.webp" alt="Avatar">
+                        <img src="/assets/images/projects/project_1.webp" alt="Image of a Full Stack Application">
                     </div>
                     <div class="card-body">
-                        <h4><b>Research & Planning</b></h4>
+                        <h4><b>Full Stack Applications</b></h4>
+                        <button id="project-1-modal">Learn More</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-container">
+                        <img src="/assets/images/projects/project_2.webp" alt="Command Window of a Script">
+                    </div>
+                    <div class="card-body">
+                        <h4><b>Automation Scripting</b></h4>
                         <button>Learn More</button>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="img-container">
-                        <img src="/assets/images/projects/project_2.webp" alt="Avatar">
+                        <img src="/assets/images/projects/project_3.webp" alt="Screenshot of a Website">
                     </div>
                     <div class="card-body">
-                        <h4><b>Research & Planning</b></h4>
+                        <h4><b>Websites</b></h4>
                         <button>Learn More</button>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="img-container">
-                        <img src="/assets/images/projects/project_3.webp" alt="Avatar">
+                        <img src="/assets/images/projects/project_4.webp" alt="Image of Process Automation">
                     </div>
                     <div class="card-body">
-                        <h4><b>Research & Planning</b></h4>
+                        <h4><b>Process Automation</b></h4>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-container">
+                        <img src="/assets/images/projects/project_5.webp" alt="Screenshot of Python Code">
+                    </div>
+                    <div class="card-body">
+                        <h4><b>More Projects</b></h4>
                         <button>Learn More</button>
                     </div>
                 </div>
@@ -88,8 +107,8 @@
             </div>
             <div>
                 <img src="/assets/images/problem_solving.webp" alt="Image of a problem solver">
-                <p>Highlight specific services or products that are unique to your business here. It can be your flagship product, or a service that you've pioneered. Give it room to shine here.</p>
-                <button>Read Our Case Studies</button>
+                <p>The solution to nagging problems is rarely clear and obvious. More commonly - hard work, determinination, and some innovation are required to have a real breakthrough. I do not view projects as mere tasks but as opportunities to for serious change and advancement.</p>
+                <button>Tell Me More</button>
             </div>
         </section>
 
@@ -99,7 +118,7 @@
             </div>
             <div>
                 <h2>Creating</h2>
-                <p>Highlight specific services or products that are unique to your business here. It can be your flagship product, or a service that you've pioneered. Give it room to shine here.</p>
+                <p>Out-of-the-box software can only get you so far. Sometimes a custom solution is the only way to improve business operations. This is where I strive - finding those unique opportunities to create something entirely new.</p>
                 <button>Ask Me About It</button>
             </div>
         </section>
@@ -109,21 +128,19 @@
             <div id="learning-gallery">
                 <div class="card">
                     <div class="img-container">
-                        <img src="/assets/images/projects/project_1.webp" alt="Avatar">
+                        <img src="/assets/images/learning_1.webp" alt="Image of Software Learning">
                     </div>
                     <div class="card-body">
-                        <p>Give a short description of your project.
-                            Share the impact it made.</p>
+                        <p>For me - the work is never completed. There is always more to learn, things to try, and practice to be had. Youtube, Codecademy, W3 Schools, Pluralsite, and so many more are used to keep me going forward.</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="img-container">
-                        <img src="/assets/images/projects/project_3.webp" alt="Avatar">
+                        <img src="/assets/images/learning_2.webp" alt="Image of Learning Online">
                     </div>
                     <div class="card-body">
-                        <p>Give a short description of your project.
-                            Share the impact it made.</p>
+                        <p>For more formal training I am also currently receiving education from New York University(NYU) in software development. This program works to refine and validate my existing skill set. It should also propell me ahead.</p>
                     </div>
                 </div>
             </div>
@@ -151,8 +168,15 @@
 
             <div id="icons"><a href="https://github.com/DJFancyAl" target="_blank"><i class="fa-brands fa-github"></i></a><a href="https://www.linkedin.com/in/abluemleiv/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://www.instagram.com/abluem89/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
         </footer>
-    
         <script src="/scripts.js"></script>
     </main>
+
+    <!-- The Modal -->
+    <div id="project-1-modal" class="modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+        </div>  
+    </div>
 </body>
 </html>
