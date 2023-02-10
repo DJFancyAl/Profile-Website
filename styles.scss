@@ -45,6 +45,10 @@ p {
     font-size: 1.6em;
 }
 
+button {
+    cursor:pointer;
+}
+
 header {
     box-sizing: border-box;
     display: flex;
@@ -456,16 +460,41 @@ input {
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
 }
   
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    background-color: $secondary_3;
+    margin: 5% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    border: 1em solid $secondary_1;
+    width: 80%;
+    a {
+        font-weight: bold;
+        color: $primary_2;
+    }
+    a:hover {
+        color: $acccent;
+    }
+    h2 {
+        font-size: 4em;
+        color: $acccent;
+    }
+    h4 {
+        font-size: 2.5em;
+        color: $primary_2;
+    }
+    h4:last-of-type{
+        padding-top: 1.5em;
+    }
+    h5 {
+        font-size: 1.6em;
+        font-weight: bold;
+    }
+    li {
+        font-size: 1.4em;
+    }
  }
   
 /* The Close Button */
@@ -481,6 +510,37 @@ input {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.modal-open {
+    overflow: hidden;
+}
+
+.showcase {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 1.5em;
+    img {
+        width:33%;
+        cursor: pointer;
+    }
+    img:hover{
+        box-shadow: 0 0 3px 3px $acccent;
+    }
+}
+
+.banner {
+    position: fixed;
+    top:50%;
+    left: 50%;
+    width: 60%;
+    z-index: 1000;
+    transform: translate(-50%,-50%);
+    transition: 0.7s;
+    cursor: pointer;
+    border: 3px solid $acccent;
 }
 
 @media screen and (max-width: 992px) {
@@ -557,6 +617,16 @@ input {
         .card {
             width: 90%;
         }
+    }
+    .showcase {
+        justify-content: center;
+        img {
+            width: 80%;
+            padding: 15px;
+        }
+    }
+    .banner {
+        width: 90%;
     }
 }
 

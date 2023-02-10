@@ -55,7 +55,7 @@
                     </div>
                     <div class="card-body">
                         <h4><b>Full Stack Applications</b></h4>
-                        <button id="project-1-modal">Learn More</button>
+                        <button id="modalBtn-0">Learn More</button>
                     </div>
                 </div>
 
@@ -65,7 +65,7 @@
                     </div>
                     <div class="card-body">
                         <h4><b>Automation Scripting</b></h4>
-                        <button>Learn More</button>
+                        <button id="modalBtn-1">Learn More</button>
                     </div>
                 </div>
 
@@ -75,7 +75,7 @@
                     </div>
                     <div class="card-body">
                         <h4><b>Websites</b></h4>
-                        <button>Learn More</button>
+                        <button id="modalBtn-2">Learn More</button>
                     </div>
                 </div>
 
@@ -85,7 +85,7 @@
                     </div>
                     <div class="card-body">
                         <h4><b>Process Automation</b></h4>
-                        <button>Learn More</button>
+                        <button id="modalBtn-3">Learn More</button>
                     </div>
                 </div>
 
@@ -95,7 +95,7 @@
                     </div>
                     <div class="card-body">
                         <h4><b>More Projects</b></h4>
-                        <button>Learn More</button>
+                        <button id="modalBtn-4">Learn More</button>
                     </div>
                 </div>
             </div>
@@ -119,7 +119,7 @@
             <div>
                 <h2>Creating</h2>
                 <p>Out-of-the-box software can only get you so far. Sometimes a custom solution is the only way to improve business operations. This is where I strive - finding those unique opportunities to create something entirely new.</p>
-                <button>Ask Me About It</button>
+                <button id="#createBtn">Ask Me About It</button>
             </div>
         </section>
 
@@ -168,15 +168,179 @@
 
             <div id="icons"><a href="https://github.com/DJFancyAl" target="_blank"><i class="fa-brands fa-github"></i></a><a href="https://www.linkedin.com/in/abluemleiv/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://www.instagram.com/abluem89/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
         </footer>
-        <script src="/scripts.js"></script>
     </main>
 
-    <!-- The Modal -->
-    <div id="project-1-modal" class="modal">
+    <!-- The Modals -->
+    <div id="modal-1" class="modal">
         <div class="modal-content">
         <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
+            <h2>Full Stack Applications</h2>
+            <p>The right application may require a "full stack" solution. Powerful and unique applications may be created with the proper front-end and back-end technologies. I would like to share a couple of my full stack applications:</p>
+
+            <h4>Bin Making App</h4>
+            <p>This application is currently being used by employees at Marker Systems LLC. The application was designed to serve several purposes for the manufacturing company:</p>
+            <ol>
+                <li>Automating time consuming tasks.</li>
+                <li>Creating an interface between production and management staff.</li>
+                <li>Providing useful analytics about production.</li>
+            </ol>
+            <p>Since implementation - the application has accomplished each of the goals above and there have been countless benefits from use of the app. Including:</p>
+            <ul>
+                <li>Reduced labor commited to tasks such as creating pick lists or consolidation lists.</li>
+                <li>Improved coordination between employees.</li>
+                <li>Improved scheduling through use of production analytics.</li>
+                <li>Reduced inventory through use of included tools.</li>
+                <li>Significantly less production mistakes by reducing human error.</li>
+            </ul>
+
+            <div class="showcase">
+                <img src="assets/images/projects/project_1/bin_1.webp" alt="Image of a Full Stack App">
+                <img src="assets/images/projects/project_1/bin_2.webp" alt="Image of a Full Stack App">
+                <img src="assets/images/projects/project_1/bin_3.webp" alt="Image of a Full Stack App">
+            </div>
+
+            <h5>Front End</h5>
+            <p>The app features a high-performance interface which uses <a href="https://reactjs.org/" target="_blank">React.js</a> to display dynamic content. The use of <a href="https://reactrouter.com/en/main" target="_blank">React Router</a> means there are almost zero page loads while moving throughout the app. The app is also uses <a href="https://tailwindcss.com/" target="_blank">Tailwind.css</a> to provide a unique by very professionally styled interface.</p>
+            <h5>Back End</h5>
+            <p>This site uses <a href="https://www.django-rest-framework.org/" target="_blank">Django REST API</a>. Django was chosen because of Python's ability to handle the large sets of data required to make the app work. Python also allowed for complex operations to be performed for certain tools in the app.</p>
+            <p>Additionally, some app features required "real-time" functionality. In these instances websockets were used with the help of Django Channels. The result is that multiple users can interact with the app at the same time.</p>
+
+            <h4>DJ Set Builder</h4>
+            <p>This app has been a real product of passion! As a music lover and DJ hobbiest - I saw an opporunity to take my DJ sets to the next level. So I created my "DJ Set Builder" which makes creating sets an interactive and visual experience. The app works by following these steps:</p>
+            <ol>
+                <li>The user adds their songs using the form. This includes valuable information such as the mood of the song and how energetic it is. A bubble is created for the song and colored for it's energy.</li>
+                <li>The user can filter songs based on their parameters (such as vibe, energy, or BPM).</li>
+                <li>The user drag and drops songs into the tracklist on the right. This is where they begin actually building their DJ Set!</li>
+                <li>The user can view graphs - displaying the flow throughout the DJ set, so they can visualize what it will do to their crowd.</li>
+            </ol>
+
+            <div class="showcase">
+                <img src="assets/images/projects/project_1/dj_1.webp" alt="Image of a Full Stack App">
+                <img src="assets/images/projects/project_1/dj_2.webp" alt="Image of a Full Stack App">
+                <img src="assets/images/projects/project_1/dj_3.webp" alt="Image of a Full Stack App">
+            </div>
+
+            <h5>Front End</h5>
+            <p>This application also uses React.js to create a very dynamic user experience. The interface allows for seemless interaction between page objects and is able to communicate with the back end without any page loads. The app uses <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> to create a familiar but tasteful style.</p>
+            <h5>Back End</h5>
+            <p>The DJ Set Builder is built using the "MERN" stack. With this method <a href="https://expressjs.com/" target="_blank">Express.js</a> is used for the requests and <a href="https://www.mongodb.com/" target="_blank">MongoDB</a> is used as the database. This full JavaScript stack works quickly to support the front end.</p>
         </div>  
     </div>
+
+    <div id="modal-2" class="modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+            <h2>Automation Scripts</h2>
+            <p>Countless hours are wasted every day performing menial or repetitive tasks. That's where I come in! Scripting may be a great solution to reduce these pesky tasks or to perform complex operations. Scripts are usually simple and do not have a GUI (graphical user interface). They can be run manually or automatically to suit your needs. Here are a couple of scripts I use regularly:</p>
+
+            <h4>File Sequencer</h4>
+            <p>The <em>File Sequencer</em> came to be when a photography studio needed an better way to manage their large inventory of image files. Upon uploading photo shoots from a digital camera, the image files had obscure names such as <em>dsc_092821.jpg</em> or <em>dsc_100821.jpg</em>, which had nothing to do with the content of the images and they were hard to sort. So the file sequence was created to:</p>
+            <ol>
+                <li>Be able to quickly rename a large volume of images (or files).</li>
+                <li>Allow the user to provide their own descriptor of the image contents.</li>
+                <li>Rename the images in sequence so they can be easily sorted.</li>
+            </ol>
+            <p>Needless to say - the script works great! It works well to handle camera uploads but can be used for many similar purposes too. Since it will work with any file type, the <em>File Sequencer</em> has been used to rename hundreds of PDFs at once or thousands of log files at a time. Read more about it on <a href="https://github.com/DJFancyAl/File-Sequencer" target="_blank">Github</a>.</p>
+
+            <div class="showcase">
+                <img src="assets/images/projects/project_2/sequencer_1.webp" alt="Screenshot of confusing file names">
+                <img src="assets/images/projects/project_2/sequencer_2.webp" alt="Screnshot of File Sequencer">
+                <img src="assets/images/projects/project_2/sequencer_3.webp" alt="Screenshot of organized files">
+            </div>
+
+            <h4>Telegram Monitor</h4>
+            <p>The <em>Telegram Monitor</em> became necessary for a customer who was having problems with their Crypto mining process. The issue being faced is that their crypto mining operation would often fail or the machine which was mining would occassionally power off without them knowing. This would lead to missed time mining and loss of money. So the <em>Telegram Monitor</em> was made to:</p>
+            <ol>
+                <li>The script runs on a schedule - as frequently or infrequently as necessary.</li>
+                <li>When run it will notify the user through a Telegram message if their mining operation failed.</li>
+                <li>Allow the user to respond to the message - telling the machine to restart the operation.</li>
+                <li>Notify the user again to inform them when the operation was running again.</li>
+            </ol>
+            <p>The <em>Telegram Monitor</em> works exactly as expected. The monitor notifies the customer when there's a problem and they are able to respond immediately. It has drastically limited the amount of down time in their crypto mining process. You can also see how this application can be applied to many other necessary computer processes.</p>
+        </div>  
+    </div>
+
+    <div id="modal-3" class="modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+            <h2>Websites</h2>
+            <p>Over time I have built many websites for small and medium companies as well as for charities and personal projects. Sites have been built using <a href="https://www.drupal.org/" target="_blank">Drupal</a>, <a href="https://wordpress.com/" target="_blank">Wordpress</a>, <a href="https://www.djangoproject.com/" target="_blank">Django</a>, or with static methods. Here are a couple of more recent projects:</p>
+
+            <h4>Marker Systems LLC.</h4>
+            <p>As a manufacturing company in Western New York - <em>Marker Systems LLC.</em> was looking for a website to showcase their services. Looking to replace their old, slow website - Marker wanted a high performance site with a sleek look. So we created the new <a href="http://markersys.com" target="_blank">markersys.com</a>.</p>
+
+            <p>The new website is exactly what they were looking for! For this website we kept things simple - there's no back end or database. Just pure HTML, CSS, and JavaScript. The website also uses <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a> to assist with styling. The result is a fast, one page website that gets customers engaged. Check it out on <a href="https://github.com/DJFancyAl/Marker-Website" target="_blank">Github</a>.</p>
+
+            <div class="showcase">
+                <img src="assets/images/projects/project_3/marker_1.webp" alt="Marker Systems Website Screenshot">
+                <img src="assets/images/projects/project_3/marker_2.webp" alt="Marker Systems Website Screenshot">
+            </div>
+
+            <h4>Profile Website</h4>
+            <p>I know, I know...you're already on this website! I decided that this must be showcased though because of how it was built. This profile website uses no CMS, no frameworks, and no databases. It was built 100% from scratch with pure HTML, CSS, and JavaScript. <a href="https://sass-lang.com/" target="_blank">SASS</a> was used to compile the stylesheet. When I set out to build this site I had three goals in mind:</p>
+            <ol>
+                <li>Create a site with a unique and very organic design.</li>
+                <li>Make a robust single page site, with no loading pages.</li>
+                <li>Explore my CSS and JavaScript capabilities to create dynamic visual content.</li>
+            </ol>
+
+            <div class="showcase">
+                <img src="assets/images/projects/project_3/profile_1.webp" alt="Screenshot of Profile Website">
+                <img src="assets/images/projects/project_3/profile_2.webp" alt="Screenshot of Profile Website">
+                <img src="assets/images/projects/project_3/profile_3.webp" alt="Screenshot of Profile Website">
+            </div>
+        </div>  
+    </div>
+
+    <div id="modal-4" class="modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+            <h2>Process Automation</h2>
+            <p>For over a decade - my technical skills have been used to create or enhance processes in the manufacturing environment. Increased labor costs, greater demand, and more complex procresses are just a few reasons why automation is necessary to compete. Here's just a couple of automation projects:</p>
+
+            <h4>Completely Automatic Manufacturing</h4>
+            <p>The manufacturing process for <a href="https://niabraze.com/" target="_blank">Niabraze LLC's</a> fixed diamond wire was very powerful and effective. However, it presented a couple of issues. First - it required 24 hour per day monitoring for changes in product quality. Second - the process required a lot of small manual interventions to keep the product in specification. It was clear that there must be a better way...</p>
+
+            <p>So I turned to a <a href="https://www.aveva.com/en/products/edge/" target="_blank">Indusoft Web Studio</a> - a powerful SCADA (supervisory control and data acquisition) software solution. We began by having Indusoft read from a SQL database, containing data from the process monitoring system. Once the data was being read by Indusoft we were able to create an alerting system if the product's quality was moving out of specification. This solved problem #1.</p>
+
+            <p>But for problem #2 we needed to take things a step further - by actually adjusting process parameters. Instead of just alerting the operator, Indusoft was able to actually make subtle adjustments to keep the product in spec. Some adjustments included changing the process speed, changing the temperature of chemical baths, and metering chemical additives into those baths.</p>
+
+            <p><b>The result?</b> A (literally) lights out manufacturing process. Human intervention was nearly eliminated and the process was able to run 24 hours per day - often without the lights on. Product consistency also improved and operators were immediately alerted to any out of spec product without any additonal testing.</p>
+
+            <h4>Factory Simulation</h4>
+            <p>Creating a new manufacturing process can be a costly, time consuming process. There's a lot of uncertainty involved and risk associated with every decision. For these reasons, factory simulation can be very beneficial before starting a build. Here are just a few benefits to using simulation:</p>
+            <ol>
+                <li>Eliminating logistical errors.</li>
+                <li>Time cycle studies.</li>
+                <li>Program and test PLCs, robots, and more offline.</li>
+            </ol>
+            <p>I have primarily used <a href="https://www.visualcomponents.com/" target="_blank">Visual Components</a> for simulation and the benefits have been amazing. It has made for later implementations to go much smoother than would otherwise be possible. Use of this technique ensures success right from the start with any manufacturing process.</p>
+
+            <div class="showcase">
+                <img src="assets/images/projects/project_4/factory_1.webp" alt="Screenshot of Profile Website">
+                <img src="assets/images/projects/project_4/factory_2.webp" alt="Screenshot of Profile Website">
+            </div>
+        </div>  
+    </div>
+
+    <div id="modal-5" class="modal">
+        <div class="modal-content">
+        <span class="close">&times;</span>
+            <h2>More Projects</h2>
+            <p>It would simply be impossible to share every project I have created or every area I have worked. Amongst other things, I am a technology enthusiast and do not believe in having one specific area of expertise. Instead I prioritize finding the best solution for the problem at hand.</p>
+
+            <h4>Technology</h4>
+            <p>Throughout my career I have used everything from Drone Cameras to CNC routers. From video editing software to articulating robots - I have experience with it all. My enthusiasm for technology combined with curiosity means I will learn what is necessary to make a project work.</p>
+
+            <p>Programming skills have been used in many different ways - such as making an "Alexa" app to open my garage door, a robot to insult my grandma, and a Discord bot allowing users to get updates on crypto rates. The possibilities are endless and I can't wait to build the next thing.</p>
+
+            <div class="showcase">
+                <img src="assets/images/projects/project_4/factory_1.webp" alt="Screenshot of Profile Website">
+                <img src="assets/images/projects/project_4/factory_2.webp" alt="Screenshot of Profile Website">
+            </div>
+        </div>  
+    </div>
+
+    <script src="/scripts.js"></script>
 </body>
 </html>

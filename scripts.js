@@ -8,9 +8,8 @@ function respondNav() {
     }
   }
 
-
+// Handle Dynamic Pages
 const cards = document.getElementsByClassName("card");
-
 const about = document.getElementById("about");
 const aboutText = about.getElementsByTagName("div")
 const projects = document.getElementById("projects");
@@ -37,7 +36,6 @@ for(let i=0; i < cards.length; i++){
         image[0].style.width = "100%";
     })
 }
-
 
 window.addEventListener('scroll', (event) => {
     const aboutPosition = about.getBoundingClientRect();
@@ -86,3 +84,48 @@ window.addEventListener('scroll', (event) => {
         }
     }
 })
+
+// Get the modals
+let modals = document.getElementsByClassName('modal')
+
+for(let i=0; i < modals.length; i++){
+    let modal = modals[i];
+    let spans = document.getElementsByClassName("close");
+
+    // Get the button that opens the modal
+    let btn = document.getElementById("modalBtn-" + (i));
+    btn.onclick = function() {
+        modal.style.display = "block";
+        document.body.className = ("modal-open")
+
+        let images = modal.getElementsByTagName("img")
+        for(let i=0; i < images.length; i++){
+            images[i].addEventListener("click", () => {
+                let image = document.createElement("img")
+                image.src = images[i].src
+                image.classList.add("banner")
+                document.body.append(image)
+                setTimeout(() => {
+                    modal.classList.add("modal-open")
+                    window.addEventListener("click", () => {
+                        image.remove()
+                        modal.classList.remove("modal-open")
+                    })
+                },0)
+            })
+        }
+    }
+
+    // Handle the Close Buttons
+    spans[i].onclick = function() {
+        modal.style.display = "none";
+        document.body.className = ("")
+    }
+
+    modal.onclick = (event) => {
+        if(event.target == modal){
+            modal.style.display = "none"
+            document.body.className = ("")
+        }
+    }
+}
