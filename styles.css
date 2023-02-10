@@ -1,13 +1,13 @@
 /* Fonts */
 @font-face {
   font-family: "codec_proitalic";
-  src: url("/assets/fonts/codecpro-italic-webfont.woff2") format("woff2"), url("/assets/fonts/codecpro-italic-webfont.woff") format("woff");
+  src: url("./assets/fonts/codecpro-italic-webfont.woff2") format("woff2"), url("./assets/fonts/codecpro-italic-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "codec_proregular";
-  src: url("/assets/fonts/codecpro-regular-webfont.woff2") format("woff2"), url("/assets/fonts/codecpro-regular-webfont.woff") format("woff");
+  src: url("./assets/fonts/codecpro-regular-webfont.woff2") format("woff2"), url("./assets/fonts/codecpro-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -509,6 +509,7 @@ input {
   transform: translate(-50%, -50%);
   transition: 0.7s;
   cursor: pointer;
+  border: 3px solid #3f4726;
 }
 
 @media screen and (max-width: 992px) {
